@@ -99,6 +99,6 @@ error: failed to push some refs to 'https://github.com/Anderfg13/LAB01-DOSW.git'
 Resolvimos en primera instancia deshaciendo el commit que no fue admitido.
 
 Punto 7 parte 2
-Commit 2.
+Commit 2.1
 
 PROBANDOANDOANDO COMO OCURREN LOS ERRORES
