@@ -49,8 +49,19 @@ Ejemplo de flujo completo:
    git commit -m "Corrige error en archivo.txt"
    ```
  
+Integrantes: 
+Christian Alfonso Romero Martinez
+Anderson Fabian Garcia Nieto
 
-Parte 2 : Manejo conflictos
- Commit 2
- Christian Alfonso Romero Martinez
- Anderson Fabian Garcia Nieto
+Los que sucedio fue que hubo un error, y se reflejo en el siguiente mensaje del colaborador:
+
+""Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 393 bytes | 196.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/Anderfg13/LAB01-DOSW.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 0ad956f98beb9d5bf3325278c898a566087e5f11 but expected 6edba0e8542aa7cfaaa224e32e4f128765ef0572)
+error: failed to push some refs to 'https://github.com/Anderfg13/LAB01-DOSW.git'""
