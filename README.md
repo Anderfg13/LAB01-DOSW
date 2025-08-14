@@ -102,3 +102,10 @@ Punto 7 parte 2
 Commit 2.1
 
 PROBANDOANDOANDO COMO OCURREN LOS ERRORES
+
+
+###Parte 3
+
+Cracion de rama feature/ChristianRomero
+para pull request
+
