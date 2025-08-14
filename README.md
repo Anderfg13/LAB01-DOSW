@@ -49,3 +49,8 @@ Ejemplo de flujo completo:
    git commit -m "Corrige error en archivo.txt"
    ```
  
+
+Parte 2 : Manejo conflictos
+ Commit 2
+ Christian Alfonso Romero Martinez
+ Anderson Fabian Garcia Nieto
