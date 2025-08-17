@@ -109,3 +109,6 @@ PROBANDOANDOANDO COMO OCURREN LOS ERRORES
 Cracion de rama feature/ChristianRomero
 para pull request
 
+Text agragar capturas
+![alt text](image.png)
+
