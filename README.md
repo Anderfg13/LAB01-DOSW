@@ -8,10 +8,10 @@
 
 ## 👥 Integrantes
 
-| Nombre                                 |
+| Nombre                                  |
 |-----------------------------------------|
-| Christian Alfonso Romero Martínez       |
 | Anderson Fabián García Nieto            |
+| Christian Alfonso Romero Martinez       |
 
 ---
 
