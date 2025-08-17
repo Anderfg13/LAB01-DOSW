@@ -119,32 +119,27 @@ Se creó la rama `feature/ChristianRomero` para la gestión de cambios y la post
 
 ---
 
-## 🖼️ Evidencia Fotográfica del Proceso
 
-A continuación se presenta una galería de imágenes que evidencian el uso de comandos en Git Bash y GitHub Desktop durante la práctica:
+## 🖼️ Galería de Evidencias
 
 <div align="center">
-
-| Evidencia | Imagen |
-|-----------|--------|
-| 1 | ![](pictures/image.png) |
-| 2 | ![](pictures/image%20(1).png) |
-| 3 | ![](pictures/image%20(2).png) |
-| 4 | ![](pictures/image%20(3).png) |
-| 5 | ![](pictures/image%20(4).png) |
-| 6 | ![](pictures/image%20(5).png) |
-| 7 | ![](pictures/image%20(6).png) |
-| 8 | ![](pictures/image%20(7).png) |
-| 9 | ![](pictures/image%20(8).png) |
-| 10 | ![](pictures/image%20(9).png) |
-| 11 | ![](pictures/image%20(10).png) |
-| 12 | ![](pictures/image%20(11).png) |
-| 13 | ![](pictures/imagen%20(2).png) |
-| 14 | ![](pictures/imagen%20(3).png) |
-| 15 | ![](pictures/imagen%20(4).png) |
-| 16 | ![](pictures/imagen%20(5).png) |
-| 17 | ![](pictures/imagen%20(6).png) |
-
+  <img src="Pictures/image.png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(1).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(2).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(3).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(4).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(5).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(6).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(7).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(8).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(9).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(10).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/image%20(11).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(2).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(3).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(4).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(5).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(6).png" width="320" style="margin:10px;"/>
 </div>
 
 ---
