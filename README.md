@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.escuelaing.edu.co/" alt="Escuela" />
+  <img src="Pictures/Logotipo.png" alt="Escuela" />
 </div>
 
 # 💻 Práctica Git: Comandos Básicos
