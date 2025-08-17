@@ -109,3 +109,6 @@ PROBANDOANDOANDO COMO OCURREN LOS ERRORES
 Cracion de rama feature/ChristianRomero
 para pull request
 
+Evidencia fotografica del proceso usando comandos de git bash y git desktop
+
+![Git bash](Pictures/imagen.png)
