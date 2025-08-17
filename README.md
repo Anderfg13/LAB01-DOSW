@@ -111,5 +111,4 @@ para pull request
 
 Evidencia fotografica del proceso usando comandos de git bash y git desktop
 
-![Git bash](LAB01-DOSW/Pictures/imagen.png)
-https://github.com/ChristianAlfonsoRomeroMartinez/LAB01-DOSW/feature/ChristianRomero/Pictures/imagen.png
+![Texto alternativo](pictures/image.png)
