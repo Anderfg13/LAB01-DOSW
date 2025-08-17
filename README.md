@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Universidad-Nacional%20de%20Colombia-green" alt="UNAL" />
+  <img src="https://www.escuelaing.edu.co/" alt="Escuela" />
 </div>
 
 # 💻 Práctica Git: Comandos Básicos
@@ -145,5 +145,5 @@ Se creó la rama `feature/ChristianRomero` para la gestión de cambios y la post
 ---
 
 <div align="center">
-  <sub>Universidad Nacional de Colombia - Facultad de Ingeniería - 2025</sub>
+  <sub>Escuela Colombiana de Ingenieria Julio Garavito - Decanatura de Sistemas - DOSW - 2025</sub>
 </div>
