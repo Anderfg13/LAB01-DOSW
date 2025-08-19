@@ -111,6 +111,10 @@ error: failed to push some refs to 'https://github.com/Anderfg13/LAB01-DOSW.git'
 
 Se resolvió deshaciendo el commit que no fue admitido y repitiendo el proceso correctamente.
 
+**Solución aplicada en el caso de un editor de codigo:**
+
+El editor de codigo señala explicitamente los cambios locales y los cambios nuevos que se van a hacer, como ve que pueden chocar, este te permite elegir cuales dejar (Ambos, el cambio local o el cambio remoto).
+
 ---
 
 ## 🔄 Mejores Prácticas para Evitar Conflictos en Git
