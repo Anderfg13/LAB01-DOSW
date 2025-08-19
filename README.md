@@ -139,7 +139,8 @@ git rebase origin/main
 5. # Sube tus cambios al repositorio remoto
 git push -u origin feat/nombre-de-tu-rama
 
----
+```
+
 # Proceso de Pull Request (PR):
 
 1. Crea tu rama y sube cambios:
