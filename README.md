@@ -174,7 +174,7 @@ git push origin feature/nueva-funcion
 ## 🚩 Creación de Ramas y Pull Request
 
 Se crearon las ramas `feature/ChristianRomero` y `feature/AndersonGarcia` para la gestión de cambios y la posterior realización de un Pull Request, por cada integrante, para la aceptación y/o rechazo del Pull Request.
-
+```
 ---
 
 
@@ -198,6 +198,7 @@ Se crearon las ramas `feature/ChristianRomero` y `feature/AndersonGarcia` para l
   <img src="Pictures/imagen%20(4).png" width="320" style="margin:10px;"/>
   <img src="Pictures/imagen%20(5).png" width="320" style="margin:10px;"/>
   <img src="Pictures/imagen%20(6).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(15).png" width="320" style="margin:10px;"/>
 </div>
 
 ---
