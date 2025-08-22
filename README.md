@@ -69,7 +69,7 @@ Los comandos `git add` y `git commit -m "mensaje"` son fundamentales en Git. Se 
 
 
 ```bash
-git commit -m "Añade función de login básico"
+git commit -m "Mensaje a colocar sobre los cambios"
 ```
 
 > 💡 Si no usas la opción `-m`, Git abrirá un editor (como Vim o Nano) para que escribas un mensaje más largo.
@@ -115,32 +115,6 @@ Se resolvió deshaciendo el commit que no fue admitido y repitiendo el proceso c
 
 El editor de codigo señala explicitamente los cambios locales y los cambios nuevos que se van a hacer, como ve que pueden chocar, este te permite elegir cuales dejar (Ambos, el cambio local o el cambio remoto).
 
----
-
-## 🔄 Mejores Prácticas para Evitar Conflictos en Git
-
-```bash
-# Flujo de trabajo recomendado:
-
-1. # Sincroniza con el repositorio principal ANTES de empezar
-git pull origin main
-
-2. # Crea una rama nueva para cada funcionalidad/corrección
-git checkout -b feat/nombre-de-tu-rama
-
-3. # Haz commits frecuentes y descriptivos
-git add .
-git commit -m "✨ [feat] Agrega función de cálculo de fracciones"
-
-4. # Mantén tu rama actualizada (sin mezclar commits)
-git fetch origin
-git rebase origin/main
-
-5. # Sube tus cambios al repositorio remoto
-git push -u origin feat/nombre-de-tu-rama
-
-```
-
 # Proceso de Pull Request (PR):
 
 1. Crea tu rama y sube cambios:
@@ -154,7 +128,7 @@ git push origin feature/nueva-funcion
   * Compare: tu-rama (tus cambios)
 
 3. Completa el formulario:
-- Título descriptivo (ej: "✨ Añade función de cálculo")
+- Título descriptivo
 - Descripción detallada:
   * Qué cambiaste
   * Por qué
