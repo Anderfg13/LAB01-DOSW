@@ -19,10 +19,12 @@ public class CarreraParalela {
         }
 
         Function<List<Integer>, String> calcular = lista -> {
+            int minimo = Collections.min(lista);
             int maximo = Collections.max(lista);
             int cantidad = lista.size();
-            boolean esPar = (maximo % 2 == 0) ? true : false;
-            return "Número más grande: " + maximo + ", Cantidad de datos: " + cantidad + ", Es par: " + esPar;
+            boolean isDivisible = (2 % maximo == 0) ? true : false;
+            boolean cantidadImpar = (cantidad % 2 != 0) ? true : false;
+            return "Número más pequeño: " + minimo + ", Cantidad de datos: " + cantidad + ", Es divisible: " + isDivisible + ", Cantidad es impar: " + cantidadImpar;
         };
 
         String resultado = calcular.apply(numeros);
