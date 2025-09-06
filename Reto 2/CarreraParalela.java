@@ -18,13 +18,14 @@ public class CarreraParalela {
             numeros.add(Integer.parseInt(s));
         }
 
-        Function<List<Integer>, String> calcular = lista -> {
+        Function<List<Integer>, Objeto> calcular = lista -> {
             int maximo = Collections.max(lista);
+            int minimo = Collections.min(lista);
             int cantidad = lista.size();
-            return "Número más grande: " + maximo + ", Cantidad de datos: " + cantidad;
+            return new Objeto(maximo, minimo, cantidad);
         };
 
-        String resultado = calcular.apply(numeros);
-        System.out.println(resultado);
+        Objeto resultado = calcular.apply(numeros);
+        resultado.mostrarResultados();
     }
 }
