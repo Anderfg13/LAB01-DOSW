@@ -69,7 +69,7 @@ Los comandos `git add` y `git commit -m "mensaje"` son fundamentales en Git. Se 
 
 
 ```bash
-git commit -m "Añade función de login básico"
+git commit -m "Mensaje a colocar sobre los cambios"
 ```
 
 > 💡 Si no usas la opción `-m`, Git abrirá un editor (como Vim o Nano) para que escribas un mensaje más largo.
@@ -111,12 +111,45 @@ error: failed to push some refs to 'https://github.com/Anderfg13/LAB01-DOSW.git'
 
 Se resolvió deshaciendo el commit que no fue admitido y repitiendo el proceso correctamente.
 
+**Solución aplicada en el caso de un editor de codigo:**
+
+El editor de codigo señala explicitamente los cambios locales y los cambios nuevos que se van a hacer, como ve que pueden chocar, este te permite elegir cuales dejar (Ambos, el cambio local o el cambio remoto).
+
+# Proceso de Pull Request (PR):
+
+1. Crea tu rama y sube cambios:
+git checkout -b feature/nueva-funcion
+git push origin feature/nueva-funcion
+
+2. En GitHub:
+- Ve a "Pull Requests" > "New Pull Request"
+- Selecciona:
+  * Base: main (rama destino)
+  * Compare: tu-rama (tus cambios)
+
+3. Completa el formulario:
+- Título descriptivo
+- Descripción detallada:
+  * Qué cambiaste
+  * Por qué
+  * Capturas si es necesario
+
+4. Asigna revisores (tu compañero/profesor)
+
+5. Resuelve comentarios (si los hay):
+- Haz nuevos commits en tu rama
+- Los cambios se actualizan automáticamente en el PR
+
+6. Merge (cuando sea aprobado):
+- Opción "Squash and merge" (combina todos los commits)
+- Borra la rama (opción disponible al mergear)
+
 ---
 
 ## 🚩 Creación de Ramas y Pull Request
 
-Se creó la rama `feature/ChristianRomero` para la gestión de cambios y la posterior realización de un Pull Request.
-
+Se crearon las ramas `feature/ChristianRomero` y `feature/AndersonGarcia` para la gestión de cambios y la posterior realización de un Pull Request, por cada integrante, para la aceptación y/o rechazo del Pull Request.
+```
 ---
 
 
@@ -140,6 +173,7 @@ Se creó la rama `feature/ChristianRomero` para la gestión de cambios y la post
   <img src="Pictures/imagen%20(4).png" width="320" style="margin:10px;"/>
   <img src="Pictures/imagen%20(5).png" width="320" style="margin:10px;"/>
   <img src="Pictures/imagen%20(6).png" width="320" style="margin:10px;"/>
+  <img src="Pictures/imagen%20(15).png" width="320" style="margin:10px;"/>
 </div>
 
 ---
