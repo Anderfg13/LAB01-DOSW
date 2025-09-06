@@ -32,4 +32,14 @@ public class TesoroPirata {
         resultado.putAll(hashTable); // Hashtable sobrescribe en conflictos
         return resultado;
     }
+
+    public static void imprimirConMayusculas(Map<String, Integer> mapa) {
+        mapa.entrySet().stream()
+            .collect(Collectors.toMap(
+                entry -> entry.getKey().toUpperCase(),
+                Map.Entry::getValue
+            ))
+            .forEach((clave, valor) -> 
+                System.out.println("Clave: " + clave + " | Valor: " + valor));
+    }
 }
