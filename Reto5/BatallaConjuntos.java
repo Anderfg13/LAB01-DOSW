@@ -4,12 +4,19 @@ import java.util.stream.Collectors;
 public class BatallaConjuntos {
     
     public Set<Integer> procesarHashSet() {
-        // TODO: Implementar por Estudiante A
-        return new HashSet<>();
+        HashSet<Integer> hashSet = new HashSet<>(Arrays.asList(4, 9, 15, 7, 18, 21, 10, 5));
+        
+        System.out.println("HashSet original: " + hashSet);
+        
+        Set<Integer> resultado = hashSet.stream()
+            .filter(num -> num % 3 != 0)
+            .collect(Collectors.toSet());
+        
+        System.out.println("HashSet sin múltiplos de 3: " + resultado);
+        return resultado;
     }
     
     public Set<Integer> procesarTreeSet() {
-        // Crear TreeSet con números aleatorios (orden natural automático)
         TreeSet<Integer> treeSet = new TreeSet<>(Arrays.asList(12, 3, 25, 10, 7, 30, 18, 4));
         
         System.out.println("TreeSet original: " + treeSet);
@@ -24,15 +31,28 @@ public class BatallaConjuntos {
     }
     
     public void mostrarResultadoFinal(Set<Integer> hashSetProcesado, Set<Integer> treeSetProcesado) {
-        // TODO: Implementar en integración final
+        Set<Integer> union = new TreeSet<>(); // TreeSet para orden automático
+        union.addAll(hashSetProcesado);
+        union.addAll(treeSetProcesado);
+        
+        System.out.println("=== RESULTADO FINAL ===");
+        System.out.println("Unión ordenada: " + union);
+        System.out.println();
+        
+        union.forEach(num -> System.out.println("Número en arena: " + num));
     }
     
     public static void main(String[] args) {
         BatallaConjuntos batalla = new BatallaConjuntos();
         
-        System.out.println("=== BATALLA DE CONJUNTOS - TEST TREESET ===\n");
+        System.out.println("=== BATALLA DE CONJUNTOS - RESULTADO FINAL ===\n");
+        
+        Set<Integer> resultadoHashSet = batalla.procesarHashSet();
+        System.out.println();
         
         Set<Integer> resultadoTreeSet = batalla.procesarTreeSet();
-        System.out.println("Resultado TreeSet procesado: " + resultadoTreeSet);
+        System.out.println();
+        
+        batalla.mostrarResultadoFinal(resultadoHashSet, resultadoTreeSet);
     }
 }
