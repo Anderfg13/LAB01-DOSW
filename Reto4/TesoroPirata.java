@@ -25,7 +25,6 @@ public class TesoroPirata {
         return mapa;
     }
 
-    // Método para combinar mapas - prioriza Hashtable
     public static Map<String, Integer> combinarMapas(HashMap<String, Integer> hashMap,
                                                    Hashtable<String, Integer> hashTable) {
         Map<String, Integer> resultado = new HashMap<>(hashMap);
@@ -33,10 +32,63 @@ public class TesoroPirata {
         return resultado;
     }
 
-        public static void imprimirOrdenado(Map<String, Integer> mapa) {
-        mapa.entrySet().stream()
+    
+    public static void procesarTesoro(HashMap<String, Integer> hashMap,
+                                    Hashtable<String, Integer> hashTable) {
+        Map<String, Integer> resultado = combinarMapas(hashMap, hashTable);
+
+        resultado.entrySet().stream()
+            .collect(Collectors.toMap(
+                entry -> entry.getKey().toUpperCase(),
+                Map.Entry::getValue,
+                (existing, replacement) -> existing, // En caso de duplicados
+                LinkedHashMap::new
+            ))
+            .entrySet().stream()
             .sorted(Map.Entry.comparingByKey())
-            .forEach(entry -> 
+            .forEach(entry ->
                 System.out.println("Clave: " + entry.getKey() + " | Valor: " + entry.getValue()));
+    }
+
+    
+    private static List<Map.Entry<String, Integer>> parseInput(String input) {
+        List<Map.Entry<String, Integer>> list = new ArrayList<>();
+        String[] pairs = input.split(" ");
+        for (String pair : pairs) {
+            String[] kv = pair.split(",");
+            if (kv.length == 2) {
+                try {
+                    String key = kv[0].trim();
+                    int value = Integer.parseInt(kv[1].trim());
+                    list.add(new AbstractMap.SimpleEntry<>(key, value));
+                } catch (NumberFormatException e) {
+                    System.out.println("Valor inválido en par: " + pair + ". Ignorando.");
+                }
+            } else {
+                System.out.println("Formato inválido en par: " + pair + ". Ignorando.");
+            }
+        }
+        return list;
+    }
+
+    // Método main para probar
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresa los pares para HashMap (formato: clave1,valor1 clave2,valor2 ...): ");
+        String inputHashMap = scanner.nextLine();
+        List<Map.Entry<String, Integer>> datosHashMap = parseInput(inputHashMap);
+
+        System.out.println("Ingresa los pares para Hashtable (formato: clave1,valor1 clave2,valor2 ...): ");
+        String inputHashtable = scanner.nextLine();
+        List<Map.Entry<String, Integer>> datosHashtable = parseInput(inputHashtable);
+
+        HashMap<String, Integer> hashMap = crearHashMap(datosHashMap);
+        Hashtable<String, Integer> hashTable = crearHashtable(datosHashtable);
+
+        System.out.println("=== TESORO ENCONTRADO ===");
+        procesarTesoro(hashMap, hashTable);
+
+        scanner.close();
     }
 }
