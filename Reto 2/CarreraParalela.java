@@ -21,14 +21,13 @@ public class CarreraParalela {
         Function<List<Integer>, String> calcular = lista -> {
             int maximo = Collections.max(lista);
             int cantidad = lista.size();
-            boolean esPar = false;
-            if (maximo % 2 == 0){
-                esPar = true;
-            }
-            return "Número más grande: " + maximo + ", Cantidad de datos: " + cantidad + ", Es par: " + esPar;
+            boolean esPar = (maximo % 2 == 0) ? true : false;
+            boolean cantidadPar = (cantidad % 2 == 0) ? true : false;
+            
+            return "Número más grande: " + maximo + ", Cantidad de datos: " + cantidad + ", Es par: " + esPar + ", Cantidad es par: " + cantidadPar;
         };
 
         String resultado = calcular.apply(numeros);
         System.out.println(resultado);
-    }
+    }
 }
